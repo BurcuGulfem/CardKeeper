@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">CardKeeper</string>
+    <string name="action_info">Info</string>
+    <string name="action_gallery">Gallery</string>
+    <string name="action_camera">Camera</string>
+    <string name="action_qrcode">QR Code</string>
+    <string name="action_barcode">Barcode</string>
+
+    <string name="createcard_title_hint">Enter your card\'s name</string>
+    <string name="createcard_detail_hint">Optional: additional info </string>
+    <string name="createcard_color_background">Card background color</string>
+    <string name="createcard_color_text">Text color</string>
+    <string name="createcard_preview">Your card will look like this!</string>
+
+    <string name="toast_camera_permission_denied">Please turn camera permission on to use this functionality.</string>
+    <string name="toast_read_external_storage_permission_denied">Please turn read external memory permission on to be able to save images to the app.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="alert_not_implemented">Not implemented yet...</string>
+    <string name="dialog_confirm_deletion">Confirm Deletion</string>
+    <string name="dialog_message_deletion">Do you really want to delete this item?</string>
+</resources>
