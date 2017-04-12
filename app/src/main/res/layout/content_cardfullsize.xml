@@ -10,24 +10,25 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginBottom="5dp"
-        app:cardCornerRadius="5dp">
+        app:cardCornerRadius="@dimen/cardview_corner_radius">
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
             <TextView
                 android:id="@+id/textview_cardtitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
+                android:layout_margin="@dimen/textview_margin"
                 android:textStyle="bold" />
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:id="@+id/layout_detail"
-                android:visibility="gone">
+                android:visibility="gone"
+                android:gravity="center">
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
@@ -37,18 +38,17 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:visibility="gone"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"
-                android:layout_marginTop="10dp"/>
+                android:layout_marginStart="@dimen/textview_margin"
+                android:layout_marginEnd="@dimen/textview_margin"
+                android:layout_marginTop="@dimen/textview_margin"/>
 
             <ImageView
                 android:id="@+id/imageView_cardimage"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:scaleType="fitCenter"
-                android:minHeight="200dp"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"/>
+                android:layout_margin="@dimen/imageview_margin"
+                />
             </LinearLayout>
         </LinearLayout>
     </android.support.v7.widget.CardView>
