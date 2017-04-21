@@ -46,13 +46,6 @@ public class CardAdapter extends RealmRecyclerViewAdapter<CardItem,CardAdapter.C
     public void onBindViewHolder(final CardViewHolder holder, int position) {
         CardItem cardItem = getItem(position);
         holder.setData(cardItem);
-
-        holder.itemView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                holder.toggleExpanded();
-            }
-        });
     }
 
     class CardViewHolder extends RecyclerView.ViewHolder {
@@ -85,6 +78,13 @@ public class CardAdapter extends RealmRecyclerViewAdapter<CardItem,CardAdapter.C
             if (cardItem.getImageUrl() != null) {
                 Glide.with(context).load(cardItem.getImageUrl()).placeholder(R.drawable.fab_add).into(cardImage);
             }
+
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    toggleExpanded();
+                }
+            });
         }
 
         void toggleExpanded(){
